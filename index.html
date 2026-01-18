@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COMPROMISO 6</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans:wght@300;500;700&display=swap');
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Work Sans", "Segoe UI", sans-serif;
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px 0;
+    }
+
+    .page-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      width: 120px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.32em;
+      font-size: 12px;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-family: "Marcellus", "Georgia", serif;
+      font-weight: 400;
+      font-size: clamp(32px, 4vw, 52px);
+      margin: 0 0 12px;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: clamp(16px, 2.3vw, 22px);
+      max-width: 560px;
+      line-height: 1.5;
+    }
+
+    .hero-band {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      margin-top: 36px;
+      margin-bottom: 28px;
+      background: url("assets/img/Fondos/principal.png") center/cover no-repeat;
+      padding: 24px 0;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .body-text {
+      padding: 24px 28px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .body-text p {
+      margin: 0 0 22px;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .section-divider {
+      height: 10px;
+      background: #777777;
+      width: 100%;
+      margin: 16px 0 24px;
+    }
+
+    .beneficiarios {
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+      margin-top: 32px;
+    }
+
+    .beneficiarios-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .beneficiarios-title {
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .beneficiarios-lead {
+      margin: 0 0 12px;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .beneficiarios-text p {
+      margin: 0 0 16px;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .beneficiarios-text .beneficiarios-lead {
+      font-size: 40px;
+    }
+
+    .beneficiarios-map {
+      flex: 1;
+      min-width: 220px;
+      max-width: 360px;
+    }
+
+    .beneficiarios-map img {
+      width: 75%;
+      height: auto;
+      display: block;
+      margin-right: auto;
+    }
+
+    .beneficiarios-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      border: 1px solid #b8c1cc;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: 600;
+      background: #777777;
+      color: #ffffff;
+    }
+
+    .registro-band {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      margin-top: 32px;
+      background: url("assets/img/Fondos/plataforma.png") center/cover no-repeat;
+      padding: 24px 0;
+    }
+
+    .registro {
+      display: flex;
+      gap: 28px;
+      align-items: stretch;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .registro-media {
+      flex: 1;
+      min-width: 330px;
+      max-width: 540px;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+    }
+
+    .registro-media img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+      margin: auto;
+    }
+
+    .registro-text {
+      flex: 1.2;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .registro-title {
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 22px;
+      font-weight: 600;
+      color: #ffffff;
+    }
+
+    .registro-text p {
+      margin: 0 0 16px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #ffffff;
+    }
+
+    .registro-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      border: 1px solid #b8c1cc;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+      background: #ffffff;
+      color: #ba3034;
+    }
+
+    .registro-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .contacto {
+      margin-top: 54px;
+      text-align: center;
+      background: #575556;
+      color: #ffffff;
+      padding: 24px 16px;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+    }
+
+    .contacto p {
+      margin: 0 0 10px;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ffffff;
+    }
+
+    .redes-icons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+
+    .redes-icons img {
+      width: 36px;
+      height: 36px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .indicator-section {
+      margin-top: 32px;
+    }
+
+    .indicator-group {
+      margin-bottom: 24px;
+    }
+
+    .indicator-heading {
+      margin: 0 0 14px;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .indicator-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .indicator-card {
+      aspect-ratio: 1 / 1;
+      border: 1px solid #d7dbe2;
+      border-radius: 16px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .indicator-icon {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+    }
+
+    .indicator-title {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .indicator-text {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .indicator-footer {
+      margin: 12px 0 0;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .indicator-link {
+      font-weight: 600;
+    }
+
+    .sections {
+      margin-top: 36px;
+    }
+
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: min(100%, 920px);
+      margin: 0 auto;
+    }
+
+    .sec-btn {
+      border: none;
+      padding: 14px 22px;
+      border-radius: 16px;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      text-align: left;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .sec-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(15, 58, 74, 0.15);
+    }
+
+    .sec-arrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-size: 18px;
+      transition: transform 0.2s ease;
+    }
+
+    .sec-btn.is-active .sec-arrow {
+      transform: rotate(90deg);
+    }
+
+    .sec-panel {
+      display: none;
+      padding: 24px;
+      animation: fadeUp 0.4s ease;
+    }
+
+    .sec-panel.is-active {
+      display: block;
+    }
+
+    .sec-panel ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .sec-panel li {
+      padding: 3px 8px;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .sec-panel a {
+      color: #1a5fb4;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+
+    [data-animate] {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    body.is-ready [data-animate] {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    body.is-ready [data-animate="2"] {
+      transition-delay: 0.08s;
+    }
+
+    body.is-ready [data-animate="3"] {
+      transition-delay: 0.16s;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 800px) {
+      .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        align-self: flex-end;
+      }
+
+      .beneficiarios {
+        flex-direction: column;
+      }
+
+      .registro {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="page-header" data-animate="1">
+      <div>
+        <p class="eyebrow">PROGRAMA DE ENTORNOS SEGUROS</p>
+        <h1>COMPROMISO 6</h1>
+        <p class="subtitle">MEJORAR LA PRESTACIÓN DE SERVICIOS EN ENTORNOS VIALES DE RIESGO</p>
+      </div>
+      <a class="logo-link" href="https://www.onsv.gob.pe/" target="_blank" rel="noopener">
+        <img class="logo" src="assets/img/logos/logo-onsv.png" alt="Logo ONSV">
+      </a>
+    </header>
+
+    <section class="hero-band" data-animate="2">
+      <div class="hero">
+        <img src="assets/img/im_principal.png" alt="Imagen principal">
+      </div>
+    </section>
+
+    <section class="body-text" data-animate="3">
+      <p>El objetivo del compromiso es contribuir a la disminución de siniestros de tránsito mediante la implementación, mantenimiento y ampliación de medidas de seguridad vial. Por ello, en el marco del Programa e Incentivo  la Mejora de la Gestión Municipal 2026, la Dirección e Seguridad Vial (DSV) del Ministerio de Transporte y Comunicaciones (MTC) brindará asistencia técnica especializada en materia de Seguridad Vial a municipalidades distritales y provinciales a nivel nacional para cumplir dicho objetivo.</p>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <section class="beneficiarios" data-animate="3"><div class="beneficiarios-text"><p class="beneficiarios-title">BENEFICIARIOS</p><p class="beneficiarios-lead">252 GOBIERNOS LOCALES</p><p>Se realizó una priorización de gobiernos locales en función a la data registrada de siniestralidad vial fatal en el <strong><a href="https://www.onsv.gob.pe/" target="_blank" rel="noopener">Observatorio Nacional de Seguridad Vial</a></strong> y a la data de niveles de seguridad vial registrados en el aplicativo <strong><a href="https://entornoseguro.mtc.gob.pe/" target="_blank" rel="noopener">Entornos Seguros</a></strong></p><a class="beneficiarios-button" href="https://docs.google.com/spreadsheets/d/1twkDuA3AmiMPrXahuYfHKpHuN6cXWDng/edit?usp=sharing&amp;ouid=111220779334790900744&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Revisa la lista de beneficiarios aquí</a></div><div class="beneficiarios-map"><img src="assets/img/mapa.png" alt="Mapa"></div></section>
+
+    <section class="indicator-section" data-animate="3"><div class="indicator-group"><h2 class="indicator-heading">INDICADORES</h2><div class="indicator-row"><div class="indicator-card"><img class="indicator-icon" src="assets/img/iconos/indicador1.png" alt="Icono"><p class="indicator-title">INDICADOR 1</p><p class="indicator-text">Número de <strong>zonas escolares</strong> priorizadas que cuentan con medidas de seguridad vial implementadas y/o mantenidas</p></div>
+<div class="indicator-card"><img class="indicator-icon" src="assets/img/iconos/indicador2.png" alt="Icono"><p class="indicator-title">INDICADOR 2</p><p class="indicator-text">Número de <strong>intersecciones viales</strong> priorizadas con medidas de seguridad vial implementadas</p></div>
+<div class="indicator-card"><img class="indicator-icon" src="assets/img/iconos/indicador3.png" alt="Icono"><p class="indicator-title">INDICADOR 3</p><p class="indicator-text">Número de zonas de <strong>establecimientos de salud</strong> priorizadas de Primer Nivel de Atención en Salud (PNAS) con medidas de seguridad vial implementadas</p></div></div><p class="indicator-footer">La verificación de los indicadores se realiza de acuerdo a lo establecido en las <a class="indicator-link" href="#" data-open="sec-01">fichas técnicas</a></p></div></section>
+
+    <section class="registro-band" data-animate="3"><div class="registro"><div class="registro-media"><img src="assets/img/plataforma.png" alt="Plataforma"></div><div class="registro-text"><p class="registro-title">REGISTRO DE INFORMACIÓN</p><p>Registra los medios de verificación correspondientes a los indicadores de acuerdo a las fichas técnicas en la <strong>Plataforma de Seguridad Vial en Entornos Viales</strong> dentro de los plazos establecidos</p><div class="registro-buttons"><a class="registro-button" href="https://entornoescolar.mtc.gob.pe/#/login" target="_blank" rel="noopener">Accede a la Plataforma aquí</a><a class="registro-button" href="https://entornoescolar.mtc.gob.pe/#/login" target="_blank" rel="noopener">Revisa los plazos aquí</a></div></div></div></section>
+
+    <section class="sections" data-animate="3">
+      <div class="accordion">
+        <div class="sec-item"><button id="sec-01-btn" class="sec-btn is-active" aria-expanded="true" aria-controls="sec-01" data-target="sec-01"><span class="sec-title">Fichas técnicas</span><span class="sec-arrow" aria-hidden="true">></span></button><div id="sec-01" class="sec-panel is-active" role="region" aria-labelledby="sec-01-btn" aria-hidden="false"><ul>
+<li><a href="https://" target="_blank" rel="noopener">Indicador 1</a></li>
+<li><a href="https://" target="_blank" rel="noopener">Indicador 2</a></li>
+<li><a href="https://" target="_blank" rel="noopener">Indicador 3</a></li>
+</ul></div></div>
+<div class="sec-item"><button id="sec-02-btn" class="sec-btn" aria-expanded="false" aria-controls="sec-02" data-target="sec-02"><span class="sec-title">Lista de zonas priorizadas y metas</span><span class="sec-arrow" aria-hidden="true">></span></button><div id="sec-02" class="sec-panel" role="region" aria-labelledby="sec-02-btn" aria-hidden="true"><ul>
+<li><a href="https://dsv-mtc.github.io/PI2026/" target="_blank" rel="noopener">Lista de zonas priorizadas</a></li>
+<li><a href="https://docs.google.com/spreadsheets/d/1F9PWNv1zdC_6bMsMnANM3P_EA2O_jaXR/edit?usp=sharing&amp;ouid=111220779334790900744&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Metas del Compromiso 6</a></li>
+</ul></div></div>
+<div class="sec-item"><button id="sec-03-btn" class="sec-btn" aria-expanded="false" aria-controls="sec-03" data-target="sec-03"><span class="sec-title">Formatos de medios de verificación</span><span class="sec-arrow" aria-hidden="true">></span></button><div id="sec-03" class="sec-panel" role="region" aria-labelledby="sec-03-btn" aria-hidden="true"><ul>
+<li><a href="https://drive.google.com/drive/folders/1OiLZ2uaUCKWz5dFphex6js-YOja9DP_6?usp=drive_link" target="_blank" rel="noopener">Formatos de Listas de Chequeo</a></li>
+<li><a href="https://drive.google.com/drive/folders/1PnoDGx3n69ym3bCxag90GvFbcY5bzWsS?usp=sharing" target="_blank" rel="noopener">Indicador 1</a></li>
+<li><a href="https://drive.google.com/drive/folders/1TU3sKApJnLFt7OI0_fZKziy4dDwr52h9?usp=sharing" target="_blank" rel="noopener">Indicador 2</a></li>
+<li><a href="https://drive.google.com/drive/folders/1-l1UsuotwFCR7iCEn3BrenC1YMFNAJ3u?usp=sharing" target="_blank" rel="noopener">Indicador 3</a></li>
+</ul></div></div>
+<div class="sec-item"><button id="sec-04-btn" class="sec-btn" aria-expanded="false" aria-controls="sec-04" data-target="sec-04"><span class="sec-title">Videotutoriales explicativos del compromiso</span><span class="sec-arrow" aria-hidden="true">></span></button><div id="sec-04" class="sec-panel" role="region" aria-labelledby="sec-04-btn" aria-hidden="true"><ul>
+<li><a href="https://" target="_blank" rel="noopener">Índice</a></li>
+<li><a href="https://" target="_blank" rel="noopener">Módulo 0</a></li>
+<li><a href="https://" target="_blank" rel="noopener">Módulo 1</a></li>
+<li><a href="https://" target="_blank" rel="noopener">Módulo 2</a></li>
+<li><a href="https://" target="_blank" rel="noopener">Módulo 3</a></li>
+<li><a href="https://" target="_blank" rel="noopener">Módulo 4</a></li>
+</ul></div></div>
+<div class="sec-item"><button id="sec-05-btn" class="sec-btn" aria-expanded="false" aria-controls="sec-05" data-target="sec-05"><span class="sec-title">Material de Capacitación</span><span class="sec-arrow" aria-hidden="true">></span></button><div id="sec-05" class="sec-panel" role="region" aria-labelledby="sec-05-btn" aria-hidden="true"><ul>
+<li><a href="https://www.gob.pe/institucion/mtc/noticias/1055027-el-mtc-publica-la-guia-para-la-implementacion-de-entornos-escolares-seguros-para-reducir-accidentes" target="_blank" rel="noopener">Guía para la implementación de entornos escolares</a></li>
+<li><a href="https://aulavirtual.mtc.gob.pe/seguridadvial/registro/talleres.php" target="_blank" rel="noopener">Capacitación: Taller Formativo de Entornos Escolares Seguros Online y Abierto</a></li>
+</ul></div></div>
+<div class="sec-item"><button id="sec-06-btn" class="sec-btn" aria-expanded="false" aria-controls="sec-06" data-target="sec-06"><span class="sec-title">Directorio</span><span class="sec-arrow" aria-hidden="true">></span></button><div id="sec-06" class="sec-panel" role="region" aria-labelledby="sec-06-btn" aria-hidden="true"><ul>
+<li><a href="https://docs.google.com/document/d/1hpTR1LUzH_grh_4PxmPScIS0zjvhT4Lh0Xs8phOczqI/edit?usp=sharing" target="_blank" rel="noopener">Directorio de asistencia técnica</a></li>
+</ul></div></div>
+<div class="sec-item"><button id="sec-07-btn" class="sec-btn" aria-expanded="false" aria-controls="sec-07" data-target="sec-07"><span class="sec-title">Cronograma y lugares de asistencias técnicas</span><span class="sec-arrow" aria-hidden="true">></span></button><div id="sec-07" class="sec-panel" role="region" aria-labelledby="sec-07-btn" aria-hidden="true"><ul>
+<li><a href="https://docs.google.com/document/d/1YewztepG1DtNzoxw_FE53BalYjAyGxTx9SP27xoODaw/edit?usp=sharing" target="_blank" rel="noopener">Cronograma de Asistencias técnicas sincrónicas</a></li>
+</ul></div></div>
+      </div>
+    </section>
+
+    <section class="contacto" data-animate="3"><p>Correo electrónico: seguridadvial@mtc.gob.pe</p>
+<p>Teléfono fijo: (01) 6157800 Anexo 6102</p>
+<p>Celular y WhatsApp: +51 905461611</p>
+<p>Jr. Zorritos 1203 – Lima - Lima - Lima</p><div class="redes-icons"><a href="https://www.onsv.gob.pe/" target="_blank" rel="noopener"><img src="assets/img/iconos/Icon-Paginaweb.png" alt="Icon-Paginaweb.png"></a><a href="https://www.facebook.com/onsvPE/?locale=es_LA" target="_blank" rel="noopener"><img src="assets/img/iconos/Icon-Facebook.png" alt="Icon-Facebook.png"></a><a href="https://x.com/onsvPE" target="_blank" rel="noopener"><img src="assets/img/iconos/Icon-X.png" alt="Icon-X.png"></a><a href="https://www.youtube.com/@observatorionacionaldesegu8980" target="_blank" rel="noopener"><img src="assets/img/iconos/Icon-YouTube.png" alt="Icon-YouTube.png"></a></div></section>
+  </div>
+
+  <script>
+    const buttons = Array.from(document.querySelectorAll('.sec-btn'));
+    const panels = Array.from(document.querySelectorAll('.sec-panel'));
+
+    function closeAll() {
+      panels.forEach(panel => {
+        panel.classList.remove('is-active');
+        panel.setAttribute('aria-hidden', 'true');
+      });
+      buttons.forEach(button => {
+        button.classList.remove('is-active');
+        button.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    function openById(targetId) {
+      const panel = document.getElementById(targetId);
+      if (!panel) return;
+      closeAll();
+      panel.classList.add('is-active');
+      panel.setAttribute('aria-hidden', 'false');
+      const button = buttons.find(btn => btn.dataset.target === targetId);
+      if (button) {
+        button.classList.add('is-active');
+        button.setAttribute('aria-expanded', 'true');
+      }
+      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetId = button.dataset.target;
+        const panel = document.getElementById(targetId);
+        const willOpen = !panel.classList.contains('is-active');
+        closeAll();
+        if (willOpen) {
+          panel.classList.add('is-active');
+          panel.setAttribute('aria-hidden', 'false');
+          button.classList.add('is-active');
+          button.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    document.querySelectorAll('[data-open]').forEach(link => {
+      link.addEventListener('click', event => {
+        const targetId = link.getAttribute('data-open');
+        if (targetId) {
+          event.preventDefault();
+          openById(targetId);
+        }
+      });
+    });
+
+    window.addEventListener('load', () => {
+      document.body.classList.add('is-ready');
+    });
+  </script>
+</body>
+</html>

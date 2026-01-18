@@ -1,0 +1,4 @@
+Icon-Paginaweb.png<https://www.onsv.gob.pe/>
+Icon-Facebook.png<https://www.facebook.com/onsvPE/?locale=es_LA>
+Icon-X.png<https://x.com/onsvPE>
+Icon-YouTube.png<https://www.youtube.com/@observatorionacionaldesegu8980>

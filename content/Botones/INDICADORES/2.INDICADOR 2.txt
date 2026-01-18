@@ -1,0 +1,1 @@
+Número de *intersecciones viales* priorizadas con medidas de seguridad vial implementadas
